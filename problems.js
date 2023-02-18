@@ -93,7 +93,7 @@ function fiveAndEleven(num) {
     returns the number of consonants in the word.
 */
 function countConsonants(word) {
-    const vowels = ["a", "e", "i", "o", "u"];
+    const vowels = ["a", "e", "i", "o", "u", ' '];
     let count = 0;
     for (let i = 0; i < word.length; i++) {
         if (vowels.includes(word[i])) {
@@ -123,7 +123,7 @@ function countConsonants(word) {
 function alternatingLetters(str) {
     let letters= str.split('');
     for(let i=0; i< str.length; i++){
-        if(i%2==0){
+        if(i%2!=0){
             letters[i]= letters[i].toUpperCase();
         }
     }
