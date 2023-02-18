@@ -120,8 +120,15 @@ function countConsonants(word) {
     `.split('')` function on strings to make a copy of the string as an array.
     The `.join('')` function joins the elements in an array into a string.
 */
-function whisper(str) {
-    return str.toLowerCase();
+function alternatingLetters(str) {
+    let letters= str.split('');
+    for(let i=0; i< str.length; i++){
+        if(i%2==0){
+            letters[i]= letters[i].toUpperCase();
+        }
+    }
+
+    return letters.join('');
 }
 
 
