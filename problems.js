@@ -92,7 +92,7 @@ function fiveAndEleven(num) {
     Write a function, `countConsonants(word)`, that takes in a string word and
     returns the number of consonants in the word.
 */
-function countVowels(word) {
+function countConsonants(word) {
     const vowels = ["a", "e", "i", "o", "u"];
     let count = 0;
     for (let i = 0; i < word.length; i++) {
@@ -100,7 +100,7 @@ function countVowels(word) {
             count++;
         }
     }
-    return count;
+    return word.length-count;
 }
 
 
